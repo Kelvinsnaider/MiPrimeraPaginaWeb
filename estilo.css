@@ -1,0 +1,520 @@
+/* Establecer estilo base para la página */
+body {
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial, sans-serif; 
+    background-color: #0D5674; 
+    color: white; 
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+/* Estilo del encabezado principal */
+.main-header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px; 
+    background-color: #0D5674; 
+    flex-wrap: wrap; 
+}
+/* Estilos específicos de la página de Historia */
+.historia-page .main-header {
+    background-color: #FFFFFF; 
+}
+.historia-page .main-nav ul li a {
+    color: #000000; 
+}
+.historia-page .site-title {
+    color: #000000; 
+}
+.historia-page .main-nav ul li a:hover {
+    color: #0D5674; 
+}
+/* Estilos específicos de la página de Sociedad */
+.sociedad-page .main-header {
+    background-color: #FFFFFF; 
+}
+.sociedad-page .main-nav ul li a {
+    color: #000000; 
+}
+.sociedad-page .site-title {
+    color: #000000; 
+}
+.sociedad-page .main-nav ul li a:hover {
+    color: #0D5674; 
+}
+/* Estilos específicos de la página de Negocio */
+.negocio-page .main-header {
+    background-color: #FFFFFF; 
+}
+.negocio-page .main-nav ul li a {
+    color: #000000; 
+}
+.negocio-page .site-title {
+    color: #000000; 
+}
+.negocio-page .main-nav ul li a:hover {
+    color: #0D5674; 
+}
+
+/* Estilos específicos de la página de Negocio */
+.contacto-page .main-header {
+    background-color:  #0D5674; 
+}
+.contacto-page .main-nav ul li a {
+    color: #000000; 
+}
+.contacto-page .site-title {
+    color: #000000; 
+}
+.contacto-page .main-nav ul li a:hover {
+    color: #ffffff; 
+}
+/* Estilo del logo */
+.logo {
+    height: 150px; 
+    padding-left: 50px; 
+}
+/* Estilo del título principal */
+.site-title {
+    flex-grow: 1; 
+    text-align: left; 
+    font-size: 2.5em; 
+    margin-left: 20px; 
+}
+/* Estilo del menú de navegación principal */
+.main-nav ul {
+    display: flex; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    flex-wrap: wrap; 
+    justify-content: flex-end; 
+    flex: 2; 
+}
+.main-nav ul li {
+    margin: 0 30px; 
+}
+.main-nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 1.3em; 
+    display: block; 
+    padding: 10px; 
+    white-space: nowrap; 
+}
+/* Efecto especial para los elementos del menú al pasar el cursor */
+.main-nav ul li a:hover {
+    color: #001f3f; 
+    padding: 5px 10px; 
+}
+/* Para controlar la posición horizontal del menú */
+.main-nav {
+    margin-right: 50px; 
+}  /*AQUI TERMINA EL CODIGO DEL MENU/*
+
+/* Diseño del contenido morado*/
+.main-section {
+    background-color: #1a0233;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1900px;
+    min-height: 500px; 
+}
+.text-content {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    width: 60%; 
+    padding: 20px; 
+}
+.section-title {
+    margin: 0; 
+    text-align: left; 
+    font-size: 3.5em; 
+}
+.section-description {
+    margin: 20px 0; 
+    text-align: left; 
+    font-size: 1.4em; 
+}
+.cta-nav {
+    display: flex; 
+    justify-content: flex-start; 
+}
+.cta-button {
+    background-color: white; 
+    color: #000000; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: 2px solid #000000; 
+    border-radius: 12px;
+    transition: background-color 0.3s; 
+}
+.cta-button::after {
+    content: '➡';
+    margin-left: 10px;
+    background-color: #020003;
+    color: white;
+    padding: 5px;
+    border-radius: 35px;
+}
+.cta-button:hover {
+    background-color: #800080; 
+    color: white; 
+}
+.image-content .section-image {
+    border-radius: 10px;
+    width: 80%;
+}
+
+/*HISTORIA*/
+/* Estilos generales de la página */
+body.historia-page {
+    background-color: #FFFFFF; 
+    color: #000000; 
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+/* Estilos del contenido principal */
+.content {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px;
+}
+.left-content {
+    flex: 1; 
+    margin-right: 20px; 
+}
+.left-content h2 {
+    font-size: 2.3em; 
+    margin-bottom: 20px; 
+}
+.left-content p {
+    font-size: 1.2em; 
+    margin-bottom: 20px; 
+}
+.left-content table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+}
+.left-content table, .left-content th, .left-content td {
+    padding: 10px; 
+    text-align: left; 
+    border: 2px solid red; 
+    width: auto; 
+    height: calc(400px / 5); 
+}
+.right-content {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-basis: 50%; 
+}
+/* Estilo del video */
+.right-content video {
+    max-width: 100%; 
+    height: auto; 
+    margin-right: 10px; 
+    margin-top: 120px; 
+}
+
+/*SOCIEDAD*/
+/* Estilos generales para la página Sociedad */
+.sociedad-page {
+    background-color: #fff;
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+/* Estilos para la sección principal */
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+section > div {
+    flex: 0 0 48%; 
+    max-width: 48%;
+}
+/* Estilos para el bloque izquierdo */
+.left-block {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding: 0 20px; 
+}
+/* Estilos para el título en el bloque izquierdo */
+.left-block h2 {
+    margin-bottom: 0px;
+    text-align: left; 
+    margin-left: 50px; 
+}
+/* Estilos para el párrafo en el bloque izquierdo */
+.left-block p {
+    margin-bottom: 20px;
+    text-align: justify; 
+    margin-left: 50px; 
+    margin-right: 50px; 
+}
+/* Estilos para la primera imagen en el bloque izquierdo */
+.left-block img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+    margin-top: 20px;
+}
+/* Estilos para el título de impactos clave y el párrafo */
+.left-block h3 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+    margin-top: 20px;
+}
+/* Estilos para el título de impactos clave y el párrafo */
+.left-block ul {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+    margin-top: -10px;
+}
+/* Estilos para el bloque derecho */
+.right-block {
+    flex: 0 0 48%; 
+    max-width: 30%; 
+    height: 500px; 
+    border: 2px solid black;
+    border-radius: 35px;
+    margin: 20px auto; 
+    overflow: hidden; 
+}
+.right-block img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 33px;
+}
+
+/*NEGOCIO/*
+/* Estilos para la página Negocio */
+.negocio-page {
+    background-color: #fff; 
+    color: #000; 
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+/* Estilo para la sección principal */
+.content {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px;
+}
+/* Estilo para el aside con la imagen grande */
+.content aside {
+    flex: 0 0 48%; 
+    max-width: 30%; 
+    height: 500px; 
+    border: 2px solid black;
+    border-radius: 35px;
+    margin: 20px auto; 
+    overflow: hidden;  
+}
+/* Estilo para el artículo con el contenido */
+.content article {
+    flex: 1; 
+    max-width: 50%; 
+}
+/* Estilos para el título en el bloque izquierdo */
+.left-block1 h2 {
+    margin-bottom: 0px;
+    text-align: left; 
+    margin-left: 50px; 
+}
+/* Estilos para el párrafo en el bloque izquierdo */
+.left-block1 p {
+    margin-bottom: 20px;
+    text-align: justify; 
+    margin-left: 50px; 
+    margin-right: 50px; 
+}
+/* Estilos para la primera imagen en el bloque izquierdo */
+.left-block1 img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+    margin-top: 20px;
+}
+/* Estilos para el título de impactos clave y el párrafo */
+.left-block1 h3 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+    margin-top: 20px;
+}
+/* Estilos para el título de impactos clave y el párrafo */
+.left-block1 ul {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    width: 100%;
+    max-width: 250px; 
+    height: auto; 
+    margin-top: -10px;
+}
+/* Estilo específico para la imagen grande */
+.content aside img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 33px;
+}
+/*CONTACTO*/
+/* Estilos generales para la página contacto */
+.contacto-page {
+    background-color:  #0D5674;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+.form-section {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-description {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; 
+    width: 100%; 
+}
+.grupo-campo {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    width: 100%;
+    margin-bottom: 20px;
+}
+.grupo-campo label {
+    width: 30%; 
+    text-align: right; 
+    margin-right: 10px; 
+}
+.grupo-campo input,
+.grupo-campo textarea {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 500px; 
+}
+.grupo-campo textarea {
+    height: 100px;
+}
+/* Estilos del botón */
+.btn {
+    padding: 10px 20px; 
+    background-color: #000000; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 15px; 
+    cursor: pointer; 
+    font-size: 1em; 
+    margin-top: 10px; 
+    align-self: flex-end; 
+}
+.btn:hover {
+    background-color: #003d24; 
+    color: white; 
+}
+.social-media a {
+    margin: 0 25px; 
+    align-items: center; 
+    text-align: center;
+}
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+.social-media h3 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+.social-media .icons {
+    display: flex;
+    flex-direction: row; 
+}
+/* Estilo del pie de página */
+.main-footer {
+    background-color: #0D5674; 
+    padding: 10px; 
+    text-align: right; 
+    color: white; 
+}
+/* Estilos específicos para la página Historia */
+.historia-page .footer {
+    background-color: #ffffff; 
+    padding: 10px; 
+    text-align: right; 
+    color: #000000; 
+}
+/* Estilos específicos para la página Sociedad */
+.sociedad-page .footer {
+    background-color: #ffffff; 
+    padding: 10px; 
+    text-align: right; 
+    color: #000000; 
+}
+/* Estilos específicos para la página Negocio */
+.negocio-page .footer {
+    background-color: #ffffff; 
+    padding: 10px; 
+    text-align: right; 
+    color: #000000; 
+}
+/* Estilos específicos para la página Contacto */
+.contacto-page .footer-con {
+    background-color: #0D5674; 
+    padding: 10px; 
+    text-align: right; 
+    color: #ffffff; 
+}
